@@ -9,6 +9,7 @@
 #import "HelloWorldViewController.h"
 
 @interface HelloWorldViewController ()
+@property (weak, nonatomic) IBOutlet UITextField *nameTextField;
 
 @end
 
@@ -24,6 +25,18 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+#pragma mark - Target Actions
+
+- (IBAction)greet
+{
+    
+    NSString *name = self.nameTextField.text;
+    
+    UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Saludo" message:[NSString stringWithFormat:@"Hola, %@", name] delegate:self cancelButtonTitle:@"Ok" otherButtonTitles:nil];
+    
+    [alertView show];
 }
 
 @end
