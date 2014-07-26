@@ -112,8 +112,6 @@
 		F12A9605195CE23A005F31C4 /* HelloWorld */ = {
 			isa = PBXGroup;
 			children = (
-				F12A960E195CE23A005F31C4 /* HelloWorldAppDelegate.h */,
-				F12A960F195CE23A005F31C4 /* HelloWorldAppDelegate.m */,
 				F12A9611195CE23A005F31C4 /* Main.storyboard */,
 				F12A9614195CE23A005F31C4 /* HelloWorldViewController.h */,
 				F12A9615195CE23A005F31C4 /* HelloWorldViewController.m */,
@@ -126,6 +124,8 @@
 		F12A9606195CE23A005F31C4 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				F12A960E195CE23A005F31C4 /* HelloWorldAppDelegate.h */,
+				F12A960F195CE23A005F31C4 /* HelloWorldAppDelegate.m */,
 				F12A9607195CE23A005F31C4 /* HelloWorld-Info.plist */,
 				F12A9608195CE23A005F31C4 /* InfoPlist.strings */,
 				F12A960B195CE23A005F31C4 /* main.m */,
@@ -457,6 +457,7 @@
 				F12A9630195CE23A005F31C4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F12A9631195CE23A005F31C4 /* Build configuration list for PBXNativeTarget "HelloWorldTests" */ = {
 			isa = XCConfigurationList;
@@ -465,6 +466,7 @@
 				F12A9633195CE23A005F31C4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

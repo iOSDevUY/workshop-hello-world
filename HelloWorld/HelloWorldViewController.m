@@ -9,34 +9,34 @@
 #import "HelloWorldViewController.h"
 
 @interface HelloWorldViewController ()
+
 @property (weak, nonatomic) IBOutlet UITextField *nameTextField;
 
 @end
 
 @implementation HelloWorldViewController
 
+#pragma mark - View Controller Life Cycle
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
-}
-
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 #pragma mark - Target Actions
 
-- (IBAction)greet
+- (IBAction)sayhi
 {
-    
     NSString *name = self.nameTextField.text;
     
-    UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Saludo" message:[NSString stringWithFormat:@"Hola, %@", name] delegate:self cancelButtonTitle:@"Ok" otherButtonTitles:nil];
+    UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"This demo is awesome!"
+                                                        message:[NSString stringWithFormat:@"Hi, %@", name]
+                                                       delegate:self cancelButtonTitle:@"Hi"
+                                              otherButtonTitles:nil];
     
     [alertView show];
+    
+    NSLog(@"Log: %@", @"Say hi! button pressed");
 }
 
 @end
