@@ -21,6 +21,8 @@
 		F12A9621195CE23A005F31C4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F12A9603195CE23A005F31C4 /* UIKit.framework */; };
 		F12A9629195CE23A005F31C4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F12A9627195CE23A005F31C4 /* InfoPlist.strings */; };
 		F12A962B195CE23A005F31C4 /* HelloWorldTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F12A962A195CE23A005F31C4 /* HelloWorldTests.m */; };
+		F1EB1F7D1A11591000FA2C4C /* SelectGreetTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F1EB1F7C1A11591000FA2C4C /* SelectGreetTVC.m */; };
+		F1EB1F801A115A6700FA2C4C /* SayHiVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F1EB1F7F1A115A6700FA2C4C /* SayHiVC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,10 @@
 		F12A9626195CE23A005F31C4 /* HelloWorldTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "HelloWorldTests-Info.plist"; sourceTree = "<group>"; };
 		F12A9628195CE23A005F31C4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		F12A962A195CE23A005F31C4 /* HelloWorldTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HelloWorldTests.m; sourceTree = "<group>"; };
+		F1EB1F7B1A11591000FA2C4C /* SelectGreetTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelectGreetTVC.h; sourceTree = "<group>"; };
+		F1EB1F7C1A11591000FA2C4C /* SelectGreetTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelectGreetTVC.m; sourceTree = "<group>"; };
+		F1EB1F7E1A115A6700FA2C4C /* SayHiVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SayHiVC.h; sourceTree = "<group>"; };
+		F1EB1F7F1A115A6700FA2C4C /* SayHiVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SayHiVC.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +119,10 @@
 			isa = PBXGroup;
 			children = (
 				F12A9611195CE23A005F31C4 /* Main.storyboard */,
+				F1EB1F7E1A115A6700FA2C4C /* SayHiVC.h */,
+				F1EB1F7F1A115A6700FA2C4C /* SayHiVC.m */,
+				F1EB1F7B1A11591000FA2C4C /* SelectGreetTVC.h */,
+				F1EB1F7C1A11591000FA2C4C /* SelectGreetTVC.m */,
 				F12A9614195CE23A005F31C4 /* HelloWorldViewController.h */,
 				F12A9615195CE23A005F31C4 /* HelloWorldViewController.m */,
 				F12A9617195CE23A005F31C4 /* Images.xcassets */,
@@ -251,8 +261,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				F12A9610195CE23A005F31C4 /* HelloWorldAppDelegate.m in Sources */,
+				F1EB1F801A115A6700FA2C4C /* SayHiVC.m in Sources */,
 				F12A9616195CE23A005F31C4 /* HelloWorldViewController.m in Sources */,
 				F12A960C195CE23A005F31C4 /* main.m in Sources */,
+				F1EB1F7D1A11591000FA2C4C /* SelectGreetTVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
