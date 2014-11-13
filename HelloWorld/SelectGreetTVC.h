@@ -10,4 +10,6 @@
 
 @interface SelectGreetTVC : UITableViewController
 
+@property (strong, nonatomic) NSString *name;
+
 @end

@@ -5,7 +5,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
     </dependencies>
     <scenes>
-        <!--Hello World View Controller-->
+        <!--iOS hands On!-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
                 <viewController id="vXZ-lx-hvc" customClass="HelloWorldViewController" sceneMemberID="viewController">
@@ -20,7 +20,7 @@
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter your name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6dI-2G-IO7">
                                 <rect key="frame" x="20" y="104" width="280" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="words"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lkq-Ze-Hhy">
                                 <rect key="frame" x="119.5" y="261" width="82" height="46"/>
@@ -29,8 +29,8 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="sayhi" destination="vXZ-lx-hvc" eventType="touchUpInside" id="7yZ-Vz-uKQ"/>
-                                    <segue destination="Nrb-7p-JVc" kind="push" id="Kvj-yT-z9L"/>
+                                    <action selector="sayHi" destination="vXZ-lx-hvc" eventType="touchUpInside" id="3oV-il-JAu"/>
+                                    <segue destination="Nrb-7p-JVc" kind="push" identifier="SelectGreeting" id="Kvj-yT-z9L"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -43,14 +43,14 @@
                             <constraint firstItem="6dI-2G-IO7" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="40" id="lek-qV-mPA"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="lZ3-pV-R4K"/>
+                    <navigationItem key="navigationItem" title="iOS hands On!" id="lZ3-pV-R4K"/>
                     <connections>
                         <outlet property="nameTextField" destination="6dI-2G-IO7" id="drb-6S-IvJ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="808" y="257"/>
+            <point key="canvasLocation" x="842" y="257"/>
         </scene>
         <!--Seleccioná un saludo-->
         <scene sceneID="jrw-Sg-xys">
@@ -90,7 +90,7 @@
             </objects>
             <point key="canvasLocation" x="1277" y="257"/>
         </scene>
-        <!--Say HiVC-->
+        <!--Hi there! =)-->
         <scene sceneID="wO8-Ez-8ES">
             <objects>
                 <viewController id="aRq-dM-Gv3" customClass="SayHiVC" sceneMemberID="viewController">
@@ -109,13 +109,13 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.59607843140000005" green="0.91372549020000005" blue="0.54117647059999996" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstAttribute="centerY" secondItem="Qxz-QA-vHs" secondAttribute="centerY" id="EVY-Fs-utL"/>
                             <constraint firstAttribute="centerX" secondItem="Qxz-QA-vHs" secondAttribute="centerX" id="qA1-JY-1kD"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="0VR-n2-Fzl"/>
+                    <navigationItem key="navigationItem" title="Hi there! =)" id="0VR-n2-Fzl"/>
                     <connections>
                         <outlet property="sayHiLabel" destination="Qxz-QA-vHs" id="Zzd-V6-Fjy"/>
                     </connections>
@@ -129,6 +129,7 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="45e-Hh-ofg" sceneMemberID="viewController">
                     <toolbarItems/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="gWl-LN-Ec9">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -140,7 +141,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dw9-IA-ydQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="354" y="257"/>
+            <point key="canvasLocation" x="409" y="257"/>
         </scene>
     </scenes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">

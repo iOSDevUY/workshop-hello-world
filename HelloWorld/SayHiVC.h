@@ -10,6 +10,6 @@
 
 @interface SayHiVC : UIViewController
 
-@property (strong, nonatomic) NSString *greet;
+@property (strong, nonatomic) NSString *greeting;
 
 @end

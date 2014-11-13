@@ -11,7 +11,7 @@
 
 @interface SelectGreetTVC ()
 
-@property (nonatomic, strong) NSArray *greets;
+@property (nonatomic, strong) NSArray *greetings;
 
 @end
 
@@ -19,20 +19,20 @@
 
 - (void)viewDidLoad
 {
-    self.greets = @[@"Hola, <nombre>", @"Buenos días, <nombre>"];
     [super viewDidLoad];
+    self.greetings = @[@"Hola", @"Hi", @"Hallo", @"Ciao", @"Olá", @"Ni Hao", @"Konnichi wa", @"Hej", @"Namaste", @"Buna ziua", @"Ahoj", @"Sveiki", @"Tere", @"Aloja", @"Merhaba", @"Habari"];
 }
 
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
     // Return the number of sections.
-    return 1;
+    return 1; // default
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     // Return the number of rows in the section.
-    return [self.greets count];
+    return [self.greetings count];
 }
 
 
@@ -43,7 +43,7 @@
     
     // Configure the cell...
     
-    cell.textLabel.text = self.greets[indexPath.row];
+    cell.textLabel.text = self.greetings[indexPath.row];
     
     return cell;
 }
@@ -54,9 +54,14 @@
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
     if ([segue.identifier isEqualToString:@"SayHi"]) {
+        
         if ([segue.destinationViewController isKindOfClass:[SayHiVC class]]) {
-            SayHiVC *sayHiVC = (SayHiVC *)segue.destinationViewController;
-            sayHiVC.greet = [self.tableView cellForRowAtIndexPath:[self.tableView indexPathForSelectedRow]].textLabel.text;
+            
+            SayHiVC *shvc = (SayHiVC *)segue.destinationViewController;
+            
+            NSString *greeting = [self.tableView cellForRowAtIndexPath:[self.tableView indexPathForSelectedRow]].textLabel.text;
+            
+            shvc.greeting = [NSString stringWithFormat:@"%@ %@!", greeting, self.name];
         }
     }
     

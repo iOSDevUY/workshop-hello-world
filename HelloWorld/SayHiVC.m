@@ -18,14 +18,14 @@
 
 - (void)viewDidLoad
 {
-    self.sayHiLabel.text = self.greet;
     [super viewDidLoad];
+    self.sayHiLabel.text = self.greeting;
 }
 
-- (void)setGreet:(NSString *)greet
+- (void)setGreet:(NSString *)greeting
 {
-    _greet = greet;
-    self.sayHiLabel.text = greet;
+    _greeting = greeting;
+    self.sayHiLabel.text = greeting;
 }
 
 @end
