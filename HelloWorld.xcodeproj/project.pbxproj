@@ -210,6 +210,9 @@
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = AppleMVD;
 				TargetAttributes = {
+					F12A95FB195CE23A005F31C4 = {
+						DevelopmentTeam = AF2B5MC2QB;
+					};
 					F12A961C195CE23A005F31C4 = {
 						TestTargetID = F12A95FB195CE23A005F31C4;
 					};
@@ -368,7 +371,7 @@
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
