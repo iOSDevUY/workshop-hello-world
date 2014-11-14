@@ -19,6 +19,14 @@
 
 #pragma mark - Target Actions
 
+- (void)viewDidLoad
+{
+    [super viewDidLoad];
+    
+    self.navigationController.navigationBar.tintColor = [UIColor whiteColor];
+    
+}
+
 - (IBAction)sayHi
 {
     NSString *name = self.nameTextField.text;
