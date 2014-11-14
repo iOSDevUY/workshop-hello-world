@@ -23,6 +23,10 @@ Al presionar el botón, mostrar una alerta saludando al usuario y usar el nombre
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath;
 ```
 
+Ayuda: Los métodos anteriores son utilizados por UITableView de la siguiente manera:
+
+![alt tag](http://oi60.tinypic.com/3307ktc.jpg)
+
 Para cargar los saludos:
 
 ```objective-c
